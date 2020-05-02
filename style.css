@@ -126,7 +126,7 @@ body{
     border: none;
   }
 
-  span{
+  .number{
       display: block;
       width: 20px;
       height: 20px;
@@ -141,10 +141,53 @@ body{
       right: 30px;
       bottom: 30px;
   }
-  /* .btn-basket:before {
-    content: "\f1db";
-    font-family: FontAwesome;
+ 
+.submenu{
+    display: none;
+    position: absolute;
+    margin-left: -1px;
+}
+
+.submenu li{
+    float: none;
+    border: none;
+    width: 293px;
+    display: block;
+}
+.submenu a{
+    height: 40px;
+    line-height: 40px;
+    text-align: left;
+    padding-left: 30px;
+    background-color: #2b71b9;
+    color: white;
+}
+
+.submenu > li > a:hover{
+    background-color: white;
+    color: #2b71b9;
+    border: none;
+}
+
+.menu > li:hover > nav > .submenu{
+    display: block;
+}
+
+.down{
+    display: inline-block;
+    background-color: yellowgreen;
+}
+
+ .menu > li:hover .submenu:before {
+    display: block;
+    position: absolute;
+    top: -29px;
+    left: 123px;
+    content: "\f078";
+    font-family:"FontAwesome";
     color: #F9F0DA;
-    font-size: 20px;
-    font-weight: bold; 
-  } */
+    font-size: 8px;
+    font-weight: 900; 
+    
+  }
+
