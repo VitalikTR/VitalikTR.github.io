@@ -61,87 +61,97 @@ body {
     font-size: 21px;
 }
 
-.menu a:hover {
+.menu a:hover, .menu > a:focus{
     background-color: #2b71b9;
     color: white;
 }
 
-.search {
+.col-md-2 {
     width: 86.6%;
+    
 }
 
-.basket {
+.col-md-1 {
     width: 13.4%;
-    position: relative;
+    /* position: relative;
     top: -30px;
-    left: 260px;
+    left: 260px; */
 }
 
-.search-form {
-    margin-left: 30px;
-    margin-right: 30px;
+.search{
+    width: 200px;
+    height: 40px;
+    border: 1px solid #2b71b9;
+    margin: 0 auto;
     margin-top: 5px;
 }
 
-.search input {
-    width: 200px;
-    height: 40px;
-    position: absolute;
+.search input{
+    width: 160px;
+    height: 38px;
+    border: none;
+    background: inherit;
+    padding: 0;
     padding-left: 20px;
-    font-size: 21px;
-    font-weight: 300;
     font-family: inherit;
-    color: #2b71b9;
-    border-style: solid;
-    border-color: #2b71b9;
-    border-width: 1px;
-    background-color: inherit;
+    font-weight: 300;
+    font-size: 21px;
+    outline: none;
 }
 
 .search input::placeholder {
     color: #2b71b9;
+    font-size: 21px; 
 }
 
-.btn-search {
-    float: left;
-    top: 5px;
-    position: relative;
-    left: 164px;
-}
-
-.btn-search button {
-    height: 30px;
-    width: 30px;
-    padding: 0;
-    background: #2b71b9;
-    cursor: pointer;
-    border-style: none;
-}
-
-.basket button {
-    height: 40px;
-    width: 40px;
-    padding: 0;
-    background: white;
-    cursor: pointer;
-    border: none;
-}
-
-.number {
+.search button{
     display: block;
+    width: 30px;
+    height: 30px;
+    padding: 0;
+    border: none;
+    float: right;
+    margin: 4px;
+    background: #2b71b9;
+    background-image: url(img/search.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+    outline: none;
+}
+
+
+.cart{
+    width: 40px;
+    height: 40px;
+    margin: 0 auto;
+    margin-top: 5px;
+    border: none;
+    background:white;
+    background-image: url(img/basket.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    
+}
+
+.products-cart{
+    display: block;
+    position: absolute;
+    background-color: #2b71b9;
+    color: white;
     width: 20px;
     height: 20px;
     line-height: 20px;
     border-radius: 50px;
-    background-color: #2b71b9;
-    color: white;
-    font-size: 12px;
-    font-weight: 400;
-    font-family: inherit;
-    position: absolute;
     right: 30px;
     bottom: 30px;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 400;
+    font-family: inherit; 
 }
+
 
 .submenu {
     display: none;
@@ -165,17 +175,17 @@ body {
     color: white;
 }
 
-.submenu>li>a:hover {
+.submenu > li > a:hover {
     background-color: white;
     color: #2b71b9;
     border: none;
 }
 
-.menu>li:hover>nav>.submenu {
+.menu > li:hover > nav > .submenu {
     display: block;
 }
 
-.menu>li:hover .submenu:before {
+.menu > li:hover .submenu:before {
     display: block;
     position: absolute;
     top: -29px;
