@@ -25,11 +25,11 @@ body {
 }
 
 .col-md-3 {
-    width: 25.6%;
+    width: 25.64%;
 }
 
 .col-md-6 {
-    width: 48.8%;
+    width: 48.72%;
 }
 
 [class*="col-"] {
@@ -38,16 +38,17 @@ body {
 
 .logo {
     margin-top: 7px;
+    margin-left: 1px;
 }
 
 .menu li {
     width: 25%;
     float: left;
-    border-left: 1px solid #2b71b9;
+    border-right: 1px solid #2b71b9;
 }
 
-.menu li:last-child {
-    border-right: 1px solid #2b71b9;
+.menu li:first-child {
+    border-left: 1px solid #2b71b9;
 }
 
 .menu a {
@@ -61,7 +62,7 @@ body {
     font-size: 21px;
 }
 
-.menu a:hover, .menu > a:focus{
+.menu a:hover{
     background-color: #2b71b9;
     color: white;
 }
@@ -162,7 +163,7 @@ body {
 .submenu li {
     float: none;
     border: none;
-    width: 293px;
+    width: 286px;
     display: block;
 }
 
@@ -185,7 +186,7 @@ body {
     display: block;
 }
 
-.menu > li:hover .submenu:before {
+.menu > li:hover .submenu:after {
     display: block;
     position: absolute;
     top: -29px;
@@ -196,3 +197,4 @@ body {
     font-size: 8px;
     font-weight: 900;
 }
+
