@@ -223,24 +223,21 @@ body {
     font-size: 21px;
 }
 
-.col-1{
-    width: 23.076%;
+.main .col-md-3{
     height: 843px;
     text-align: center;
-    border: 1px solid black;
-    margin-right: 30px;
-    padding: 0;
+    border: 1px solid white;
 }
-.col-2{
+
+.col-md-9{
     width: 74.36%;
-    padding: 0;
 }
 
 .select{
     width: 25%;
 }
 
-.text-device{
+.title{
     width: 75%;
     font-size: 48px;
     font-weight: bold;
