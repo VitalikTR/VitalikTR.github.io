@@ -236,10 +236,16 @@ body > .container{
     line-height: 400px;
 }
 
+main .container{
+    color: white;
+}
+
 .main .col-md-3{
+    width: 23.076%;
     height: 843px;
     text-align: center;
-    border: 1px solid white;
+    border-right: 1px solid white;
+    margin-right: 30px;
 }
 
 .col-md-9{
@@ -249,18 +255,30 @@ body > .container{
 .breadcrumbs{
     font-size: 14px;
     font-weight: 300;
+    display: block;
+    margin-top: 30px;
+    margin-bottom: 27px;
 }
 
-.select{
-    width: 25%;
-}
-
-.title{
-    width: 75%;
+.col-md-8{
+    width: 570px;
     font-size: 48px;
     font-weight: bold;
+    margin-right: 30px;
 }
 
+.col-md-4 > select{
+    width: 270px;
+    height: 40px;
+    font-size: 21px;
+    font-weight: 300;
+    color: white;
+    background-color: #2b71b9;
+    padding-left: 18px;
+    font-family: inherit;
+    border: 1px solid white;
+    display: block;
+}
 .wrapper{
     width: 270px;
     height: 652px;
