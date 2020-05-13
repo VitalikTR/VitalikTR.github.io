@@ -276,8 +276,30 @@ main .container{
     margin-bottom: 50px;
 }
 
-.col-md-4 > select{
+.col-md-4{
     width: 270px;
+    height: 40px;
+}
+
+.select{
+    position: relative;
+}
+
+.select select{
+    display: block;
+    width: 100%; 
+    background-color: #2b71b9;
+    padding-left: 18px;
+    border: 1px solid #ccc; 
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    font-family: inherit;
+    font-size: 21px;
+    font-weight: 300;
+    line-height: 40px;
+    color: white;
+        /* width: 270px;
     height: 40px;
     font-size: 21px;
     font-weight: 300;
@@ -286,8 +308,34 @@ main .container{
     padding-left: 18px;
     font-family: inherit;
     border: 1px solid white;
-    display: block;
+    display: block; */
 }
+
+.select:after {
+    content: ">";
+    /* border-style: solid;
+    border-width: 5px;
+    border-color: #000 transparent transparent transparent;
+    pointer-events: none; */
+    position: absolute;
+    transform: rotate(90deg);
+    font-size: 21px;
+    top: 25%;
+    right: 5%;
+    z-index: 1;
+}
+
+.select option{
+    height: 40px;
+    font-size: 21px;
+    font-weight: 300;
+    color: white;
+    background-color: #2b71b9;
+    padding-left: 18px;
+    font-family: "roboto";
+    outline: 1px solid white;
+}
+
 .col-3{
     width: 270px;
     height: 652px;
@@ -435,7 +483,6 @@ main .container{
     width: 210px;
     height: 50px;
     background-color:#2b71b9;
-    margin-bottom: 15px;
     text-align: center;
     border: 1px solid white;
     margin: 0 auto;
