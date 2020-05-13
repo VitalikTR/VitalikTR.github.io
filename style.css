@@ -171,7 +171,8 @@ body {
     transition-duration: 0.9s;
     transition-delay: 0.05s;
     -webkit-transform: scaleY(0);
-    -ms-transform: scaleY(0); 
+    -ms-transform: scaleY(0);
+    transform: scaleY(0); 
     transform-origin: 0 0;
     -webkit-transform-origin: 0 0; 
     -ms-transform-origin: 0 0; 
