@@ -170,8 +170,11 @@ body {
     transition-property: opacity, visibility;
     transition-duration: 0.9s;
     transition-delay: 0.05s;
-    transform: scaleY(0);
+    -webkit-transform: scaleY(0);
+    -ms-transform: scaleY(0); 
     transform-origin: 0 0;
+    -webkit-transform-origin: 0 0; 
+    -ms-transform-origin: 0 0; 
     transition: 0.5s cubic-bezier(0.65, 1.18, 0.65, 1.19);
 }
 
@@ -237,13 +240,57 @@ body > .container{
     border-top: 1px solid white;
 }
 
+.col-md-1{
+    width: 10%;
+}
+
+.col-md-10{
+    width: 80%;
+}
 .slide{
     height: 400px;
     text-align: center;
+    font-family: 'Roboto', sans-serif;
     font-size: 100px;
     line-height: 400px;
+    font-weight: 100;
+    color: white;
 }
 
+.left, .right{
+    font-size: 100px;
+    line-height: 400px;
+    font-weight: 100;
+}
+
+.right{
+    text-align: right;
+}
+
+.right:after{
+    content: ">";
+    font-size: 100px;
+    line-height: 400px;
+    font-weight: 100;
+    display: block;
+    transform: scaleY(1.25);
+    color: white;
+}
+
+.left:after{
+    content: "<";
+    font-size: 100px;
+    line-height: 400px;
+    font-weight: 100;
+    display: block;
+    transform: scaleY(1.25);
+    color: white;
+}
+
+.current{
+    text-align: center;
+    margin-bottom: 39px;
+}
 main .container{
     color: white;
 }
