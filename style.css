@@ -320,6 +320,14 @@ main .container{
     margin-right: 30px;
 }
 
+.box-type{
+    text-align: left;
+    color: white;
+    font-family: inherit;
+}
+
+
+
 .col-md-9{
     width: 74.36%;
 }
