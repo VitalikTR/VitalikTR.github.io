@@ -288,9 +288,9 @@ body > .container{
     color: white;
 }
 
-.current{
+.active{
     text-align: center;
-    margin-bottom: 39px;
+    
 }
 main .container{
     color: white;
