@@ -235,10 +235,17 @@ body {
     font-size: 21px;
 }
 
-body > .container{
-    width: 100%;
+.holder{
+    
     border-bottom: 1px solid white;
     border-top: 1px solid white;
+}
+
+.box-slide{
+    width: 1170px;
+    margin: 0 auto;
+    margin-top: 165px;
+    margin-bottom: 94px;
 }
 
 .col-md-1{
@@ -248,19 +255,19 @@ body > .container{
 .col-md-10{
     width: 80%;
 }
+
 .slide{
-    height: 400px;
+    /* height: 400px; */
     text-align: center;
     font-family: 'Roboto', sans-serif;
     font-size: 100px;
-    line-height: 400px;
+    /* line-height: 400px; */
     font-weight: 100;
     color: white;
 }
 
 .left, .right{
     font-size: 100px;
-    line-height: 400px;
     font-weight: 100;
 }
 
@@ -270,9 +277,6 @@ body > .container{
 
 .right:after{
     content: ">";
-    font-size: 100px;
-    line-height: 400px;
-    font-weight: 100;
     display: block;
     transform: scaleY(1.25);
     color: white;
@@ -280,18 +284,30 @@ body > .container{
 
 .left:after{
     content: "<";
-    font-size: 100px;
-    line-height: 400px;
-    font-weight: 100;
     display: block;
     transform: scaleY(1.25);
     color: white;
 }
 
+.box{
+    width: 120px;
+    margin: 0 auto;
+    margin-bottom: 29px;
+}
+
 .active{
     text-align: center;
-    
+    width: 10px;
+    height: 10px;
+    border: 1px solid white;
+    margin-left: 10px;
+    margin-right: 10px;
 }
+
+.active:hover{
+    background-color: white;
+}
+
 main .container{
     color: white;
 }
