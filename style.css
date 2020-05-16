@@ -320,6 +320,19 @@ main .container{
     margin-right: 30px;
 }
 
+.main button{
+    text-transform: uppercase;
+    color: white;
+    font-size: 21px;
+    font-weight: bold;
+    border: none;
+    background: none;
+    font-family: inherit;
+    outline: none;
+    padding: 0;
+    cursor: pointer;
+}
+
 .box-type{
     text-align: left;
     color: white;
@@ -338,12 +351,14 @@ main .container{
 }
 
 .checkbox{
-   font-size: 21px;
-   font-weight: 300;
+    font-size: 21px;
+    font-weight: 300;
+    line-height: 20px;
 }
 
 .checkbox li{
     margin-top: 25px;
+    line-height: 14px;
 }
 
 .checkbox input{
@@ -378,20 +393,8 @@ main .container{
     border: 1px solid white;
     margin: 0 auto;
     line-height: 50px;
-    margin-bottom: 15px;
-}
-
-.filtr-btn input{
-    text-transform: uppercase;
-    color: white;
-    font-size: 21px;
-    font-weight: bold;
-    border: none;
-    background: none;
-    font-family: inherit;
-    outline: none;
-    padding: 0;
-    cursor: pointer;
+    margin-bottom: 30px;
+    margin-top: 30px;
 }
 
 .col-md-9{
@@ -625,46 +628,23 @@ main .container{
     margin-bottom: 15px;
 }
 
-.more-details button{
-    text-transform: uppercase;
-    color: white;
-    font-size: 21px;
-    font-weight: bold;
-    border: none;
-    background: none;
-    font-family: inherit;
-    outline: none;
-    padding: 0;
-    cursor: pointer;
-}
-
 .add-cart{
     width: 210px;
     height: 50px;
     display: block;
-    background-color: #568dc6;
+    background-color: #2b71b9;
     margin: 0 auto;
     border: 1px solid white;
 }
 
-.more-details:hover{
+.more-details:hover, .add-cart:hover, .filtr-btn:hover{
     background-color: #568dc6;
     color: #2b71b9;
 }
 
 .add-cart button{
-    border: none;
-    background: none;
-    outline: none;
-    text-transform: uppercase;
-    font-family: inherit;
-    color: white;
-    font-size: 21px;
-    font-weight: bold;
-    line-height: 50px;
-    padding: 0;
-    padding-left: 28px;
-    cursor: pointer;
+   line-height: 50px;
+   padding-left: 28px;
 }
 
 .basket-white{
@@ -677,11 +657,6 @@ main .container{
     margin-right: 20px;
 }
 
-.add-cart:hover{
-    background-color:#2b71b9;
-    color: #568dc6;
-}
-
 .excerpt{
     text-align: center;
     font-size: 36px;
@@ -690,7 +665,7 @@ main .container{
     margin-bottom: 90px;
 }
 
-.excerpt, .moore-options a{
+.excerpt a, .moore-options a{
     color: white;
     text-decoration: none;
 }
