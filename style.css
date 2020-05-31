@@ -508,10 +508,10 @@ main .container{
     background: rgba(255, 255, 255, 0.75);
 }
 
-.device-image:before {
+/* .device-image:before {
     content: "";
     position: absolute;
-    z-index: -1114441;
+    z-index: -5;
     top: 0; 
     bottom: 0; 
     right: 0; 
@@ -519,7 +519,9 @@ main .container{
     background: 
         linear-gradient(to top right, transparent calc(50% - 1px), white calc(50% - 1px), white calc(50% + 1px), transparent calc(50% + 1px)), 
          linear-gradient(to bottom right, transparent calc(50% - 1px), white calc(50% - 1px), white calc(50% + 1px), transparent calc(50% + 1px)), #FFF9;
-}
+} */ 
+/* Перекреслення по діагоналі*/
+
 
 .device-image img{
     display: block;
