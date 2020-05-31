@@ -362,10 +362,28 @@ main .container{
 }
 
 .checkbox input{
-    margin: 0;
-    margin-right: 12px;
+    display: none;
+}
+
+.checkbox label:before{
+    content: "";
+    display: block;
+    cursor: pointer;
+    position: absolute;
     width: 10px;
     height: 10px;
+    border: 1px solid white;
+    top: 6px;
+}
+
+label{
+    position: relative;
+    margin-left: 22px;
+    cursor: pointer;
+}
+
+.checkbox input:checked + label:before {
+background-color: white;
 }
 
 .device-color{
