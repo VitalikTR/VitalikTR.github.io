@@ -36,19 +36,18 @@ let likeButtons = document.querySelectorAll(".image-heart");
     moreDetailsButtons.forEach(function(btn){
         btn.addEventListener("click", function(){
             modal.classList.add("show")
-            modal.classList.remove("hide")
+                modal.classList.remove("hide")
         })
     })
 
     function closeModal() {
         modal.classList.add("hide")
-        modal.classList.remove("show")
+            modal.classList.remove("show")
     }
 
     closeBtn.addEventListener("click",closeModal);
-
-    modal.addEventListener("click", function(e){
-        if (e.target === modal) {
-            closeModal()
+        modal.addEventListener("click", function(e){
+            if (e.target === modal) {
+                closeModal()
         }
     })
