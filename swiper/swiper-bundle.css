@@ -62,6 +62,10 @@
     height: 100%;
     position: relative;
     transition-property: transform;
+    padding: 150px 0;
+    text-align: center;
+    font-size: 100px;
+    color: white;
   }
   .swiper-slide-invisible-blank {
     visibility: hidden;
@@ -150,7 +154,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    color: var(--swiper-navigation-color, var(--swiper-theme-color));
+    color: white;
   }
   .swiper-button-prev.swiper-button-disabled,
   .swiper-button-next.swiper-button-disabled {
@@ -161,7 +165,7 @@
   .swiper-button-prev:after,
   .swiper-button-next:after {
     font-family: swiper-icons;
-    font-size: var(--swiper-navigation-size);
+    font-size: 50px;
     text-transform: none !important;
     letter-spacing: 0;
     text-transform: none;
@@ -248,10 +252,9 @@
     transform: scale(0.33);
   }
   .swiper-pagination-bullet {
-    width: 8px;
-    height: 8px;
+    width: 10px;
+    height: 10px;
     display: inline-block;
-    border-radius: 100%;
     background: #000;
     opacity: 0.2;
   }
@@ -269,7 +272,7 @@
   }
   .swiper-pagination-bullet-active {
     opacity: 1;
-    background: var(--swiper-pagination-color, var(--swiper-theme-color));
+    background: white;
   }
   .swiper-container-vertical > .swiper-pagination-bullets {
     right: 10px;
