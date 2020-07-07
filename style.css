@@ -648,8 +648,8 @@ background-color: white;
     width: 300px;
     margin: 80px auto;
     height: 200px;
-    border: 1 px solid grey;
-    background-color: white;
+    border: 1px solid #2b71b9;
+    background-color: #568dc6;
     padding: 15px;
     box-sizing: border-box;
 }
@@ -660,14 +660,41 @@ background-color: white;
    width: 100%;
    height: 30px;
    padding: 5px;
+   color: #2b71b9;
+   border: none;
 }
-
+.form-fields input:focus{
+      outline: 1px solid #2b71b9;
+ }
 .btn-close{
     text-align: right;
+    cursor: pointer;
+    color: white;
+}
+.btn-close:hover{
+    color: red;
 }
 .hide{
     display: none;
 }
 .show{
     display: block;
+}
+.btn-call{
+    width: 100%;
+    font-size: 18px;
+    color: #2b71b9;
+    border: none;
+    padding: 10px 0;
+    border-radius: 5px;
+}
+.text-call{
+    text-align: center;
+    color: white;
+    font-size: 18px;
+}
+.btn-call:hover{
+    background-color: #2b71b9 ;
+    color: white;
+  
 }
