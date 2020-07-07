@@ -40,10 +40,24 @@ let likeButtons = document.querySelectorAll(".image-heart");
         })
     })
 
+    function openModal() {
+        modal.classList.add("show")
+            modal.classList.remove("hide")
+    }
+
     function closeModal() {
         modal.classList.add("hide")
             modal.classList.remove("show")
     }
+
+    function openModalByScroll() {
+        if(window.pageYOffset >= document.documentElement.scrollHeight/2) {
+            openModal()
+            window.removeEventListener('scroll', openModalByScroll)
+        }
+    }
+
+    window.addEventListener('scroll', openModalByScroll)
 
     closeBtn.addEventListener("click",closeModal);
         modal.addEventListener("click", function(e){
@@ -51,3 +65,22 @@ let likeButtons = document.querySelectorAll(".image-heart");
                 closeModal()
         }
     })
+
+        // slider
+
+        // $('.slider-block').slick()
+        
+        let swiper = new Swiper('.swiper-container', {
+            slidesPerView: 1,
+            spaceBetween: 30,
+            loop: true,
+            pagination: {
+              el: '.swiper-pagination',
+              clickable: true,
+            },
+            navigation: {
+              nextEl: '.swiper-button-next',
+              prevEl: '.swiper-button-prev',
+            },
+          });
+       
