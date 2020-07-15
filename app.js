@@ -86,6 +86,7 @@ let likeButtons = document.querySelectorAll(".image-heart");
 
 
     // product-qauntity
+    // let decrementBtn = document.querySelectorAll('.decrement-btn')[0]; занаходимо 0 (перший) елемент
     
     let decrementBtn = document.querySelectorAll('.decrement-btn')[0];
     let incrementBtn = document.querySelectorAll('.increment-btn')[0];
@@ -97,36 +98,30 @@ let likeButtons = document.querySelectorAll(".image-heart");
                 decrementBtn.disabled = true;
             } else {
                 decrementBtn.disabled = false;
+            } 
+            if (count >= 5) {
+                incrementBtn.disabled = true;
+            } else {
+                incrementBtn.disabled = false;
             }
     }
     toggleButtonState(currentCount)    
 
     incrementBtn.addEventListener("click", function(){
+        // productQuantity.value = +productQuantity.value + 1;
         let currentCount = +productQuantity.value;
         let nextCount = currentCount + 1;
-        productQuantity.value = nextCount;
-
-        if(nextCount <= 1) {
-            decrementBtn.disabled = true;
-        } else {
-            decrementBtn.disabled = false;
-        }
+            productQuantity.value = nextCount;
+        toggleButtonState(nextCount)    
     })
 
     decrementBtn.addEventListener("click", function(){
         let currentCount = +productQuantity.value;
         let nextCount = currentCount - 1;
-        productQuantity.value = nextCount;
-
-        if(nextCount <= 1) {
-            decrementBtn.disabled = true;
-        } else {
-            decrementBtn.disabled = false;
-        }
+            productQuantity.value = nextCount;
+        toggleButtonState(nextCount)    
     })
 
-
-
-    console.log(decrementBtn)
-    console.log(incrementBtn)
-    console.log(productQuantity.value)
+    // console.log(decrementBtn)
+    // console.log(incrementBtn)
+    // console.log(productQuantity.value)
