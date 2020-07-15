@@ -7,9 +7,7 @@
     <title>Shop</title>
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="swiper/swiper-bundle.css">
-    <link rel="stylesheet" href="swiper-bundle.min.css">
-    <!-- <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
-    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/> -->
+    <link rel="stylesheet" href="swiper/swiper-bundle.min.css">
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap" rel="stylesheet">
 </head>
@@ -238,9 +236,16 @@
                                 <div class="screen-size"><span>Screen size:</span> 7 inches</div>
                                 <div class="ram"><span>RAM:</span> 1Gb</div>
                                 <div class="price">$599<span>25</span></div>
+
+                                <div class="product-quantity">
+                                    <button class="decrement-btn">-</button>
+                                    <input type="text" value="1">
+                                    <button class="increment-btn">+</button>
+                                </div>
+
                                 <div class="more-details">
                                     <button>More details</button>
-                                </div>
+                                </div>      
                                 <div class="add-cart">
                                     <div class="row">
                                         <button>Add to cart</button>
@@ -491,6 +496,7 @@
         </div>
     </div>
     <!-- end modal -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="swiper/swiper-bundle.js"></script>
     <script src="swiper/swiper-bundle.min.js"></script> 
     <script src="app.js"></script>
