@@ -68,7 +68,7 @@ let likeButtons = document.querySelectorAll(".image-heart");
 
         // slider
 
-        // $('.slider-block').slick()
+        // -- Initialize Swiper -- Loop Mode / Infinite Loop
         
         let swiper = new Swiper('.swiper-container', {
             slidesPerView: 1,
@@ -83,4 +83,50 @@ let likeButtons = document.querySelectorAll(".image-heart");
               prevEl: '.swiper-button-prev',
             },
           });
-       
+
+
+    // product-qauntity
+    
+    let decrementBtn = document.querySelectorAll('.decrement-btn')[0];
+    let incrementBtn = document.querySelectorAll('.increment-btn')[0];
+    let productQuantity = document.querySelectorAll(".product-quantity input")[0];
+
+    let currentCount = +productQuantity.value;
+    function toggleButtonState(count) {
+            if(count <= 1) {
+                decrementBtn.disabled = true;
+            } else {
+                decrementBtn.disabled = false;
+            }
+    }
+    toggleButtonState(currentCount)    
+
+    incrementBtn.addEventListener("click", function(){
+        let currentCount = +productQuantity.value;
+        let nextCount = currentCount + 1;
+        productQuantity.value = nextCount;
+
+        if(nextCount <= 1) {
+            decrementBtn.disabled = true;
+        } else {
+            decrementBtn.disabled = false;
+        }
+    })
+
+    decrementBtn.addEventListener("click", function(){
+        let currentCount = +productQuantity.value;
+        let nextCount = currentCount - 1;
+        productQuantity.value = nextCount;
+
+        if(nextCount <= 1) {
+            decrementBtn.disabled = true;
+        } else {
+            decrementBtn.disabled = false;
+        }
+    })
+
+
+
+    console.log(decrementBtn)
+    console.log(incrementBtn)
+    console.log(productQuantity.value)
