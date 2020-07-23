@@ -84,7 +84,6 @@ let likeButtons = document.querySelectorAll(".image-heart");
             },
           });
 
-
     // product-qauntity
     // let decrementBtn = document.querySelectorAll('.decrement-btn')[0]; занаходимо 0 (перший) елемент
     let decrementBtn = document.querySelectorAll('.decrement-btn');
