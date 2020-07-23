@@ -120,8 +120,6 @@ let likeButtons = document.querySelectorAll(".image-heart");
     //         toggleButtonState(currentCount, incrementBtn[i], decrementBtn[i])
     //     }
        
-
-
 //     let decrementBtn = document.querySelectorAll('.decrement-btn')[0];
 //     let incrementBtn = document.querySelectorAll('.increment-btn')[0];
 //     let productQuantity = document.querySelectorAll(".product-quantity input")[0];
