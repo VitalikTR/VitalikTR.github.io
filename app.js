@@ -27,7 +27,7 @@ let likeButtons = document.querySelectorAll(".image-heart");
     }
 
 
-    // modal
+// modal
 
     let moreDetailsButtons = document.querySelectorAll(".more-details");
     // console.log(moreDetailsButtons);
@@ -66,23 +66,23 @@ let likeButtons = document.querySelectorAll(".image-heart");
         }
     })
 
-        // slider
+// slider
 
-        // -- Initialize Swiper -- Loop Mode / Infinite Loop
+ // -- Initialize Swiper -- Loop Mode / Infinite Loop
         
-        let swiper = new Swiper('.swiper-container', {
-            slidesPerView: 1,
-            spaceBetween: 30,
-            loop: true,
-            pagination: {
-              el: '.swiper-pagination',
-              clickable: true,
-            },
-            navigation: {
-              nextEl: '.swiper-button-next',
-              prevEl: '.swiper-button-prev',
-            },
-          });
+    let swiper = new Swiper('.swiper-container', {
+        slidesPerView: 1,
+        spaceBetween: 30,
+        loop: true,
+        pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+        },
+        navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+        },
+    });
 
     // product-qauntity
     // let decrementBtn = document.querySelectorAll('.decrement-btn')[0]; занаходимо 0 (перший) елемент
@@ -208,3 +208,12 @@ function Counter(incrementButton, decrementButton, inputField, minCount = 1, max
 }
 const counter1 = new Counter (incrementBtn[0], decrementBtn[0], productQuantity[0]);
 const counter2 = new Counter (incrementBtn[1], decrementBtn[1], productQuantity[1]);
+
+
+    // selectize
+
+        $('#select-beast').selectize({
+            create: true,
+            sortField: 'text'
+        });
+    
