@@ -164,7 +164,7 @@ body {
 
 .submenu {
     opacity: 0;
-    z-index: 554544445;
+    z-index: 5;
     visibility: hidden;
     position: absolute;
     margin-left: -1px;
@@ -391,15 +391,6 @@ label {
 .select{
     margin-left: 30px;
     width: 270px;
-}
-
-.item {
-    font-size: 21px;
-    font-weight: 300;
-    color: white;
-    background-color: #2b71b9;
-    padding-left: 10px;
-    font-family: "roboto";
 }
 
 .col-3 {
@@ -692,4 +683,47 @@ label {
     border: none;
     font-weight: bold;
     color: #2b71b9;
+}
+/**********         selectize      *********/
+
+.item {
+    font-size: 21px;
+    font-weight: 300;
+    color: white;
+    background-color: #2b71b9;
+    padding-left: 10px;
+    font-family: "roboto";
+}
+.selectize-input, .selectize-input.full, .selectize-control.single .selectize-input.input-active {
+    background: #2b71b9;
+}
+.selectize-input {
+   border-radius: 0;
+}
+.selectize-input.dropdown-active {
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+}
+.selectize-control.single .selectize-input:after {
+    border-color: white transparent transparent transparent;
+}
+.selectize-control.single .selectize-input.dropdown-active:after {
+   
+    border-color: transparent transparent white transparent;
+}
+.selectize-dropdown {
+    background: #2b71b9;
+    font-size: 21px;
+    font-weight: 300;
+    color: white;
+}
+.selectize-dropdown .active {
+    color: #2b71b9;
+    font-size: 21px;
+    font-weight: 300;
+    font-family: 'Roboto', sans-serif;
+}
+.selectize-dropdown .option, .selectize-dropdown .optgroup-header {
+    padding: 8px 18px;
 }
