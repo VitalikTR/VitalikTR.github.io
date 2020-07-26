@@ -388,7 +388,7 @@ label {
     color: white;
 } */
 
-.select{
+.select {
     margin-left: 30px;
     width: 270px;
 }
@@ -673,10 +673,11 @@ label {
     text-align: center;
 }
 
-.product-quantity{
+.product-quantity {
     padding-bottom: 10px;
 }
-.product-quantity input{
+
+.product-quantity input {
     width: 120px;
     border-radius: 5px;
     outline: none;
@@ -684,6 +685,39 @@ label {
     font-weight: bold;
     color: #2b71b9;
 }
+
+/**********      Slider Swiper      *********/
+
+.swiper-container {
+    width: 1170px;
+    height: 400px;
+}
+
+.swiper-slide {
+    font-size: 100px;
+    color: white;
+    text-align: center;
+    line-height: 400px;
+}
+
+.swiper-pagination-bullet {
+    width: 10px;
+    height: 10px;
+    border-radius: 0;
+}
+
+.swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet {
+    margin: 0 10px;
+}
+
+.swiper-pagination-bullet-active {
+    background: white;
+}
+
+.swiper-button-next, .swiper-button-prev {
+    color: white;
+}
+
 /**********         selectize      *********/
 
 .item {
@@ -694,36 +728,43 @@ label {
     padding-left: 10px;
     font-family: "roboto";
 }
+
 .selectize-input, .selectize-input.full, .selectize-control.single .selectize-input.input-active {
     background: #2b71b9;
 }
+
 .selectize-input {
-   border-radius: 0;
+    border-radius: 0;
 }
+
 .selectize-input.dropdown-active {
     -webkit-border-radius: 0;
     -moz-border-radius: 0;
     border-radius: 0;
 }
+
 .selectize-control.single .selectize-input:after {
     border-color: white transparent transparent transparent;
 }
+
 .selectize-control.single .selectize-input.dropdown-active:after {
-   
     border-color: transparent transparent white transparent;
 }
+
 .selectize-dropdown {
     background: #2b71b9;
     font-size: 21px;
     font-weight: 300;
     color: white;
 }
+
 .selectize-dropdown .active {
     color: #2b71b9;
     font-size: 21px;
     font-weight: 300;
     font-family: 'Roboto', sans-serif;
 }
+
 .selectize-dropdown .option, .selectize-dropdown .optgroup-header {
     padding: 8px 18px;
 }
