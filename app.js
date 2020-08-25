@@ -77,10 +77,10 @@ let likeButtons = document.querySelectorAll(".image-heart");
         pagination: {
         el: '.swiper-pagination',
         clickable: true,
-        },
+    },
         navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
         },
     });
 
