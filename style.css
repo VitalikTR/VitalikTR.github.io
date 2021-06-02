@@ -156,12 +156,6 @@ body {
     background-image: url(img/basket-white.png);
 }
 
-/* .submenu {
-    display: none;
-    position: absolute;
-    margin-left: -1px;
-} */
-
 .submenu {
     opacity: 0;
     z-index: 5;
@@ -201,22 +195,6 @@ body {
     color: #2b71b9;
     border: none;
 }
-
-/* .menu >li:hover .submenu {
-    display: block;
-} */
-
-/* .menu >li:hover .submenu:after {
-    display: block;
-    position: absolute;
-    top: -29px;
-    left: 123px;
-    content: "\f078";
-    font-family: "FontAwesome";
-     color: #F9F0DA;
-    font-size: 8px;
-    font-weight: 900;
-} */
 
 .menu>li:hover .submenu {
     opacity: 1;
@@ -370,23 +348,6 @@ label {
     font-weight: bold;
     margin-bottom: 50px;
 }
-
-/* 
-.select select {
-    display: block;
-    width: 100%;
-    background-color: #2b71b9;
-    padding-left: 18px;
-    border: 1px solid #ccc;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-    font-family: inherit;
-    font-size: 21px;
-    font-weight: 300;
-    line-height: 40px;
-    color: white;
-} */
 
 .select {
     margin-left: 30px;

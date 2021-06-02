@@ -13,7 +13,7 @@ console.log(addToCartButtons);
 
 // change like start
 let likeButtons = document.querySelectorAll(".image-heart");
-// console.log(likeButtons);
+console.log(likeButtons);
     for (let i=0; i < likeButtons.length; i++) {   
         likeButtons[i].addEventListener("click", function() {
             // this.classList.toggle("licked");
