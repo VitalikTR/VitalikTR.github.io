@@ -3,11 +3,10 @@ let productsCountEl = document.getElementById("products-count");
 // console.log(productsCountEl);
 
 let addToCartButtons = document.querySelectorAll(".add-cart");
-// console.log(addToCartsButtons);
+console.log(addToCartButtons);
     for (let i=0; i < addToCartButtons.length; i++) {
         addToCartButtons[i].addEventListener("click", function() {
-            let prevProductsCount = +productsCountEl.textContent;
-                productsCountEl.textContent = prevProductsCount + 1;
+            productsCountEl.textContent =  +productsCountEl.textContent + 1;
         
     })
 }
