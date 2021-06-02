@@ -16,12 +16,12 @@ let likeButtons = document.querySelectorAll(".image-heart");
 console.log(likeButtons);
     for (let i=0; i < likeButtons.length; i++) {   
         likeButtons[i].addEventListener("click", function() {
-            // this.classList.toggle("licked");
-            if (this.classList.contains("licked")) {
-                this.classList.remove("licked")
-                } else {
-                    this.classList.add("licked")
-            }
+            this.classList.toggle("licked");
+            // if (this.classList.contains("licked")) {
+            //     this.classList.remove("licked")
+            //     } else {
+            //         this.classList.add("licked")
+            // }
         })
     }
 
