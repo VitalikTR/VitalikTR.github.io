@@ -11,9 +11,10 @@ console.log(addToCartButtons);
     })
 }
 
-// change like start
+// change like state
+
 let likeButtons = document.querySelectorAll(".image-heart");
-console.log(likeButtons);
+// console.log(likeButtons);
     for (let i=0; i < likeButtons.length; i++) {   
         likeButtons[i].addEventListener("click", function() {
             this.classList.toggle("licked");
@@ -57,18 +58,17 @@ console.log(likeButtons);
     }
 
     window.addEventListener('scroll', openModalByScroll)
-
-    closeBtn.addEventListener("click",closeModal);
-        modal.addEventListener("click", function(e){
-            if (e.target === modal) {
-                closeModal()
-        }
-    })
+        closeBtn.addEventListener("click",closeModal);
+            modal.addEventListener("click", function(e){
+                if (e.target === modal) {
+                    closeModal()
+            }
+        })
 
 // slider
 
  // -- Initialize Swiper -- Loop Mode / Infinite Loop
-        
+
     let swiper = new Swiper('.swiper-container', {
         slidesPerView: 1,
         spaceBetween: 30,
@@ -84,13 +84,13 @@ console.log(likeButtons);
     });
 
     // product-qauntity
-    // let decrementBtn = document.querySelectorAll('.decrement-btn')[0]; занаходимо 0 (перший) елемент
-    let decrementBtn = document.querySelectorAll('.decrement-btn');
-    let incrementBtn = document.querySelectorAll('.increment-btn');
-    let productQuantity = document.querySelectorAll('.product-quantity input');
-    let minCount = 1;
-    let maxCount = 5
 
+    // let decrementBtn = document.querySelectorAll('.decrement-btn'); 
+    // let incrementBtn = document.querySelectorAll('.increment-btn');
+    // let productQuantity = document.querySelectorAll('.product-quantity input');
+    // let minCount = 1;
+    // let maxCount = 5;
+    
     //     function toggleButtonState(count, incrementBtn, decrementBtn) {
     //         decrementBtn.disabled = count <= minCount;
     //         incrementBtn.disabled = count >= maxCount;
@@ -111,80 +111,72 @@ console.log(likeButtons);
     //             let nextCount = currentCount - 1;
     //             productQuantity[i].value = nextCount;
     //             toggleButtonState(nextCount, incrementBtn[i], decrementBtn[i])
-    // })
+    //         })
     //     }
-
-    //     for (let i=0; i< productQuantity.length;i++){
+        
+    //     for (let i=0; i < productQuantity.length;i++){
     //         let currentCount = +productQuantity[i].value;
     //         toggleButtonState(currentCount, incrementBtn[i], decrementBtn[i])
     //     }
        
-//     let decrementBtn = document.querySelectorAll('.decrement-btn')[0];
-//     let incrementBtn = document.querySelectorAll('.increment-btn')[0];
-//     let productQuantity = document.querySelectorAll(".product-quantity input")[0];
-    
-//     let currentCount = +productQuantity.value;
-//     console.log(currentCount) 
-//     function toggleButtonState(count) {
-//             if(count <= 1) {
-//                 decrementBtn.disabled = true;
-//             } else {
-//                 decrementBtn.disabled = false;
-//             } if (count >= 5) {
-//                 incrementBtn.disabled = true;
-//             } else {
-//                 incrementBtn.disabled = false;
-//             }
-//     }
-//     toggleButtonState(currentCount)    
-    
-    
-// //     for (let i=0; i < incrementBtn.length; i++){
-// //        incrementBtn[i].addEventListener("click", function() {
-// //         let currentCount = +productQuantity[i].value;
-// //         let nextCount = currentCount + 1;
-// //             productQuantity[i].value = nextCount;
-// //         toggleButtonState(nextCount)       
-           
-        
-// //     })
-// // }
+    // let decrementBtn = document.querySelectorAll('.decrement-btn')[0];
+    // let incrementBtn = document.querySelectorAll('.increment-btn')[0];
+    // let productQuantity = document.querySelectorAll(".product-quantity input")[0];
+    // let currentCount = +productQuantity.value;
+  
+    // function toggleButtonState(count) {
+    //         if(count <= 1) {
+    //             decrementBtn.disabled = true;
+    //         } else {
+    //             decrementBtn.disabled = false;
+    //         } if (count >= 5) {
+    //             incrementBtn.disabled = true;
+    //         } else {
+    //             incrementBtn.disabled = false;
+    //         }
+    // }
+    // toggleButtonState(currentCount)    
+      
+    // incrementBtn.addEventListener("click", function(){
+    //     // productQuantity.value = +productQuantity.value + 1;
+    //     let currentCount = +productQuantity.value;
+    //     let nextCount = currentCount + 1;
+    //         productQuantity.value = nextCount;
+    //     toggleButtonState(nextCount)    
+    // })
+
+    // decrementBtn.addEventListener("click", function(){
+    //     let nextCount = +productQuantity.value - 1;
+    //         productQuantity.value = nextCount;
+    //     toggleButtonState(nextCount)    
+    // })
+
+    // console.log(decrementBtn)
+    // console.log(incrementBtn)
+    // console.log(productQuantity)
+
+// OOP
+
+    let decrementBtn = document.querySelectorAll('.decrement-btn'); 
+    let incrementBtn = document.querySelectorAll('.increment-btn');
+    let productQuantity = document.querySelectorAll('.product-quantity input');
+    let minCount = 1;
+    let maxCount = 5;
 
    
-//     incrementBtn.addEventListener("click", function(){
-//         // productQuantity.value = +productQuantity.value + 1;
-//         let currentCount = +productQuantity.value;
-//         let nextCount = currentCount + 1;
-//             productQuantity.value = nextCount;
-//         toggleButtonState(nextCount)    
-//     })
-
-//     decrementBtn.addEventListener("click", function(){
-//         let currentCount = +productQuantity.value;
-//         let nextCount = currentCount - 1;
-//             productQuantity.value = nextCount;
-//         toggleButtonState(nextCount)    
-//     })
-
-//     console.log(decrementBtn)
-//     console.log(incrementBtn)
-//     console.log(productQuantity)
-
-// oop
-
-function Counter(incrementButton, decrementButton, inputField, minCount = 1, maxCount= 5) {
-    this.domRefs = {
-        incrementButton,
-        decrementButton,
-        inputField,
+    function Counter(incrementButton, decrementButton, inputField, minCount = 1, maxCount= 5) {
+        this.domRefs = {
+            incrementButton,
+            decrementButton,
+            inputField,
     }
-   
     console.log(this)
     this.toggleButtonState = function() {
         let count = this.domRefs.inputField.value;
         this.domRefs.decrementButton.disabled = count <= minCount;
         this.domRefs.incrementButton.disabled = count >= maxCount;
         }
+
         this.toggleButtonState()
 
         this.increment = function(){
@@ -203,10 +195,16 @@ function Counter(incrementButton, decrementButton, inputField, minCount = 1, max
 
         this.domRefs.incrementButton.addEventListener("click", this.increment.bind(this));
         this.domRefs.decrementButton.addEventListener("click", this.decrement.bind(this));
-       
 }
-const counter1 = new Counter (incrementBtn[0], decrementBtn[0], productQuantity[0]);
-const counter2 = new Counter (incrementBtn[1], decrementBtn[1], productQuantity[1]);
+
+        for(let i=0;  ; i++){
+            const counter1 = new Counter (incrementBtn[i], decrementBtn[i], productQuantity[i]);
+        }
+
+        
+
+// const counter1 = new Counter (incrementBtn[0], decrementBtn[0], productQuantity[0]);
+// const counter2 = new Counter (incrementBtn[1], decrementBtn[1], productQuantity[1]);
 
 
     // selectize
@@ -215,4 +213,3 @@ const counter2 = new Counter (incrementBtn[1], decrementBtn[1], productQuantity[
             create: true,
             sortField: 'text'
         });
-    
